@@ -141,6 +141,9 @@ class JSONAwareQuerySet(models.query.QuerySet):
             except (AttributeError, KeyError):
                 return False
 
+        if isinstance( jdict, str): 
+            value = str( value )
+            
         return evaluators[oper](jdict, value)
 
 
