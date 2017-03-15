@@ -112,6 +112,10 @@ def getSortOrder(cBase):
 
             sName = sField['property']
             if cBase.isProtoModel:
+                
+                if sName.split('__')[0] in ['smInfo', cBase.jsonField]:
+                    cBase.jsonSorters.append(sField)
+                    continue
 
                 # Permite el ordenamiento sobre la funcion de presentacion
                 if sName == '__str__':
