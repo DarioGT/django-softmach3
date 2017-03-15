@@ -239,6 +239,7 @@ class Raccordement(ProtoModelBase):
     eledon_rac1 = models.ForeignKey('ElementDonnee', blank= True, null= True,  related_name='set_eledon_rac1')
     eledon_rac2 = models.ForeignKey('ElementDonnee', blank= True, null= True,  related_name='set_eledon_rac2')
     no_raccordement = models.IntegerField(blank= False, null= False)
+    no_raccordement1 = models.IntegerField(blank= True, null= True)
 
     tmp_rac1 = models.CharField(blank= True, null= True, max_length= 200)
     tmp_rac2 = models.CharField(blank= True, null= True, max_length= 200)

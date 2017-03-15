@@ -43,6 +43,11 @@ def readSchemaDef(dProject):
         dProject.dbEngine = 'django.db.backends.oracle'
 
 
+#     Initialise Vars 
+    field_type = '' 
+    field_params = None 
+    field_notes = '' 
+
     # Add connection information dynamically..
     pCode = slugify2( dProject.code )
     connections.databases[ pCode ] = {

@@ -20,9 +20,18 @@
 	<!-- Ext JS Files -->
 	{% block extjs %}
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/resources/theme-crisp-all.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all-debug.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/packages/ux/classic/ux.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/theme-crisp-debug.js"></script>
+	<!-- <link rel="stylesheet" type="text/css" href="{% static "css/theme-crisp-all_1.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/theme-crisp-all_2.css" %}"> -->
+
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script> -->
+	<script type="text/javascript" src="{% static "js/ext-all.js" %}"></script>
+
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/theme-crisp-debug.js"></script> -->
+	<script type="text/javascript" src="{% static "js/theme-crisp-debug.js" %}"></script>
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/packages/ux/classic/ux.js"></script> -->
+	<script type="text/javascript" src="{% static "js/ux.js" %}"></script>
 	{% endblock %}
 
 	{% block defaultstylesheets %}
